@@ -4,16 +4,13 @@ $color-primary-dark: #4f92ac;
 $color-white: #fffbfa;
 $color-black: #191308;
 
-.wrapper {
+.footer {
   display: flex;
-  justify-content: flex-end;
   align-items: center;
-  transition: all 0.4s ease-out;
   box-shadow: 0px 1px 5px 0px;
+  height: 50px;
   &__links {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    margin-left: auto;
   }
   .social-link {
     padding: 5px;
@@ -86,7 +83,7 @@ $color-black: #191308;
 }
 
 @media only screen and (max-width: 600px) {
-  .wrapper {
-    justify-content: center;
+  .footer__links {
+    margin: auto;
   }
 }
