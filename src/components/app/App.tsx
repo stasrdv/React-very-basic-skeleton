@@ -1,6 +1,5 @@
 import React from "react";
 import "./App.scss";
-import '../footer/footer.scss'
 import Footer from '../footer/footer'
 import { makeStyles } from "@material-ui/core/styles";
 
