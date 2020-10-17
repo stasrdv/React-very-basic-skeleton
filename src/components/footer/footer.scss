@@ -1,0 +1,86 @@
+$color-primary: #81c2de;
+$color-primary-light: #b4f5ff;
+$color-primary-dark: #4f92ac;
+$color-white: #fffbfa;
+$color-black: #191308;
+
+.wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  transition: all 0.4s ease-out;
+  box-shadow: 0px 1px 5px 0px;
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.social-link {
+  padding: 5px;
+  &--linkedin {
+    color: #2d76b0;
+  }
+
+  &--github {
+    color: #000;
+  }
+
+  &--instagram {
+    color: #9a2970;
+  }
+
+  &--dribbble {
+    color: #b53561;
+  }
+
+  & .social-svg {
+    width: 2.2rem;
+    height: 2.2rem;
+
+    & .social-group {
+      &__icon {
+        fill: $color-black;
+        transition: all 0.2s;
+      }
+
+      &__inner-circle {
+        fill: transparent;
+        transition: all 0.2s;
+      }
+
+      &__outline {
+        stroke: $color-black;
+        transform-origin: 50% 50%;
+        transition: all 0.2s;
+      }
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      & .social-group {
+        &__icon {
+          fill: $color-white;
+          transition: all 0.45s;
+        }
+
+        &__inner-circle {
+          fill: currentColor;
+          transition: all 0.45s;
+
+          &--instagram {
+            fill: url(#simpleInsta) !important;
+          }
+        }
+
+        &__outline {
+          stroke: currentColor;
+          transform: scale(1.1);
+          transition: all 0.45s;
+        }
+      }
+    }
+  }
+}

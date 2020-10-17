@@ -1,0 +1,15 @@
+$header-bg-color: #1976d2;
+.header {
+  background: $header-bg-color;
+  height: 65px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  color: white;
+}
+@media only screen and (max-width: 600px) {
+  .header {
+    font-size: 1.2rem;
+  }
+}
