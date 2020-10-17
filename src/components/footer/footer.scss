@@ -84,3 +84,9 @@ $color-black: #191308;
     }
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    justify-content: center;
+  }
+}
