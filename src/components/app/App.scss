@@ -1,14 +1,19 @@
-@import "../footer/footer";
-$header-bg-color: #1976d2;
-.header {
-  background: $header-bg-color;
-  height: 65px;
-  padding: 0 20px;
-  display: flex;
-  align-items: center;
-  font-size: 1.5rem;
-  color: white;
+@import "src/styles/colors.scss";
+
+.main {
+  &__wrapper {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+  }
+  &__content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    background-color: $main-content-grey;
+  }
 }
+
 @media only screen and (max-width: 600px) {
   .header {
     font-size: 1.2rem;
