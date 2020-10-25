@@ -2,10 +2,29 @@
 
 .header {
   background: $header-bg-color;
-  height: 55px;
+  height: 70px;
   padding: 0 20px;
   display: flex;
   align-items: center;
   font-size: 1.5rem;
-  color: white;
+  color: $header-font-color;
+  box-shadow: $header-box-shadow;
+  &__logo {
+    height: 50px;
+    animation: App-logo-spin infinite 20s linear;
+  }
+  &__item {
+    width: 250px;
+  }
 }
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
